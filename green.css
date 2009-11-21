@@ -1,0 +1,54 @@
+#long	{
+	background:#fff url('images/green-logo-bg.gif') no-repeat left;
+}
+
+#header-corner	{
+	background-position:0 -190px;
+}
+
+#sub	{
+	color:#8FBE00;
+}
+
+#left-content div.box form#searchform input.button	{
+	background:#8FBE00 url('images/green-fold.png') no-repeat bottom right;
+}
+
+#posts div.shallow-post h3 a	{
+	color:#8FBE00;
+}
+
+#posts div.shallow-post span.perma a	{
+	background:#8FBE00 url('images/green-fold.png') no-repeat bottom right;
+}
+
+#post h2	{
+	color:#8FBE00;
+}
+
+#post div#context a	{
+	color:#8FBE00;
+	border-bottom:1px solid #8FBE00;
+}
+
+#comments div.comment div.comment-details a	{
+	color:#8FBE00;
+}
+
+form p input.submit	{
+	background:#8FBE00;
+}
+
+#pagination a	{
+	font-size:2.4em;
+	color:#8FBE00;
+}
+
+#pagination a:hover	{
+	opacity:0.8;
+	color:#8FBE00;
+}
+
+#footer ul li a	{
+	color:#8FBE00;
+}

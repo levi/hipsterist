@@ -1,0 +1,55 @@
+#long	{
+	background:#fff url('images/orange-logo-bg.png') no-repeat left;
+}
+
+#header-corner	{
+	background-position:0 -130px;
+}
+
+#sub	{
+	color:#f26731;
+}
+
+#left-content div.box form#searchform input.button	{
+	background:#f26731 url('images/orange-fold.png') no-repeat bottom right;
+}
+
+#posts div.shallow-post h3 a	{
+	color:#f26731;
+}
+
+#posts div.shallow-post span.perma a	{
+	background:#f26731 url('images/orange-fold.png') no-repeat bottom right;
+}
+
+#post h2	{
+	color:#f26731;
+}
+
+#post div#context a	{
+	color:#f26731;
+	border-bottom:1px solid #f26731;
+}
+
+#comments div.comment div.comment-details a	{
+	color:#f26731;
+}
+
+
+form p input.submit	{
+	background:#f26731;
+}
+
+#pagination a	{
+	font-size:2.4em;
+	color:#f26731;
+}
+
+#pagination a:hover	{
+	opacity:0.8;
+	color:#f26731;
+}
+
+#footer ul li a	{
+	color:#f26731;
+}

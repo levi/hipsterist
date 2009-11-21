@@ -1,0 +1,54 @@
+#long	{
+	background:#fff url('images/red-logo-bg.png') no-repeat left;
+}
+
+#header-corner	{
+	background-position:0 -100px;
+}
+
+#sub	{
+	color:#EE280B;
+}
+
+#left-content div.box form#searchform input.button	{
+	background:#EE280B url('images/red-fold.png') no-repeat bottom right;
+}
+
+#posts div.shallow-post h3 a	{
+	color:#EE280B;
+}
+
+#posts div.shallow-post span.perma a	{
+	background:#EE280B url('images/red-fold.png') no-repeat bottom right;
+}
+
+#post h2	{
+	color:#EE280B;
+}
+
+#post div#context a	{
+	color:#EE280B;
+	border-bottom:1px solid #EE280B;
+}
+
+#comments div.comment div.comment-details a	{
+	color:#ee280b;
+}
+
+form p input.submit	{
+	background:#EE280B;
+}
+
+#pagination a	{
+	font-size:2.4em;
+	color:#EE280B;
+}
+
+#pagination a:hover	{
+	opacity:0.8;
+	color:#EE280B;
+}
+
+#footer ul li a	{
+	color:#EE280B;
+}

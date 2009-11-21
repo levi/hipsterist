@@ -1,0 +1,53 @@
+#long	{
+	background:#fff url('images/purple-logo-bg.png') no-repeat left;
+}
+
+#header-corner	{
+	background-position:0 -250px;
+}
+
+#sub	{
+	color:#c331f2;
+}
+
+#left-content div.box form#searchform input.button	{
+	background:#c331f2 url('images/purple-fold.png') no-repeat bottom right;
+}
+
+#posts div.shallow-post h3 a	{
+	color:#c331f2;
+}
+
+#posts div.shallow-post span.perma a	{
+	background:#c331f2 url('images/purple-fold.png') no-repeat bottom right;
+}
+
+#post h2	{
+	color:#c331f2;
+}
+
+	#post div#context a	{
+		color:#c331f2;
+		border-bottom:1px solid #c331f2;
+	}
+	
+	#comments div.comment div.comment-details a	{
+		color:#c331f2;
+	}
+
+form p input.submit	{
+	background:#c331f2;
+}
+
+#pagination a	{
+	color:#c331f2;
+}
+
+#pagination a:hover	{
+	opacity:0.8;
+	color:#c331f2;
+}
+
+#footer ul li a	{
+	color:#c331f2;
+}

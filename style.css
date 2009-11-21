@@ -1,0 +1,846 @@
+/*
+	Theme Name: Hipsterist
+	Theme URI: http://hipsterist.com/theme/
+	Description: A simple and elegant theme for Wordpress
+	Version: 1.0
+	Author: Levi McCallum
+	Author URI: http://levimccallum.com/
+	Tags: fixed witdh, two columns, widgets
+*/
+
+*	{ margin:0; padding:0; outline:0; }
+
+body	{
+	font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+	background: #f4f4f4 url('images/main-bg.png') repeat-y top left;
+}
+
+div.clear {
+	clear:both;
+	position:relative;
+}
+
+a	{
+	text-decoration:none;
+}
+
+img	{
+	border:none;
+}
+
+ul	{
+	list-style-type:none;
+}
+
+p, ul, ol, dl, table, address, fieldset, pre, form div	{
+	font-size:14px;
+}
+
+ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, form div p, fieldset div, table form div {
+	font-size: 12px;
+}
+
+.wrapper	{
+	width: 980px;
+	margin-left: 20px;
+}
+
+.center	{
+	text-align:center;
+}
+
+#header	{
+	padding-top:20px;
+	margin-left:20px;
+	min-width:980px;
+}
+
+	#long	{
+		background:#fff url('images/logo-bg.png') no-repeat left;
+		width:100%;
+		height:75px;
+	}
+
+	#logo	{
+		padding:7px 60px 20px 40px;
+		float:left;
+		width:300px;
+	}
+	
+	#logo a	{
+		color:#fff;
+		font-size:45px;
+		font-weight:bold;
+		display:block;
+		text-shadow:rgba(0, 0, 0, 0.2) 0 2px 0;
+		width:296px;
+		height:43px;
+	}
+	
+	#sub	{
+		height:20px;
+		padding:40px 0 20px 20px;
+		font-weight:bold;
+		color:#318df2;
+		font-size:18px;
+	}
+	
+	#header-corner	{
+		height:20px;
+		width:20px;
+		background:url('images/corners.png') no-repeat 0 -70px;
+	}
+	
+#left-content	{
+	float:left;
+	width:360px;
+}
+
+	#left-content div.box	{
+		margin-bottom:40px;
+	}
+	
+	#left-content div.box h4	{
+		padding-bottom:20px;
+		background:url('images/white-corner.png') no-repeat bottom left;
+	}
+	
+	#left-content div.box h4 span	{
+		font-weight:bold;
+		color:#666;
+		display:block;
+		padding:10px 40px;
+		background-color:#ddd;
+		font-size:20px;
+	}
+	
+	#left-content div.box ul	{
+		margin-left:40px;
+	}
+	
+	#left-content div.box ul li {
+		margin-bottom:10px;
+	}
+	
+	#left-content div.box ul li a	{
+		font-size:12px;
+		color:#666;
+	}
+	
+	#left-content div#widgets div.box ul	{
+		width:300px;
+	}
+	
+	#left-content div#widgets div.box ul li a	{
+		background:#ddd url('images/ddd-fold.png') no-repeat bottom right;
+		padding:5px 20px 5px 10px;
+		width:auto;
+		display:inline-block;
+	}
+	
+	#left-content div#widgets div.box ul li a:hover	{
+		background:#318df2 url('images/blue-fold.png') no-repeat bottom right;
+		color:#fff;
+	}
+	
+	#left-content div#category-list li.cat-item	{
+		float:left;
+		margin-right:10px;
+	}
+	
+	#left-content li.cat-item a:hover	{
+		background:#EE280B url('images/red-fold.png') no-repeat bottom right !important;
+		color:#fff !important;
+	}
+	
+	span.cat-item a:hover	{
+		color:#EE280B !important;
+	}
+	
+	#left-content ul.wppp_list li a:hover	{
+		background:#8FBE00 url('images/green-fold.png') no-repeat bottom right !important;
+		color:#fff !important;
+	}
+	
+	#left-content div.box ul li a:hover, #left-content div.box ul li.active a	{
+		color:#318df2;
+	}
+		
+	#left-content #navigation	{
+		margin-bottom:30px;
+	}
+	
+	#left-content #navigation ul	{
+		margin-left:0px;		
+	}
+	
+	#left-content #navigation ul li	{
+		margin-bottom:0;
+		line-height:10em;
+	}
+	
+	#left-content #navigation ul li div.corner	{
+		height:10px;
+		width:20px;
+		background:url('images/grey-corner-s.png') no-repeat left bottom;
+	}
+	
+	#left-content #navigation ul li.last div.corner	{
+		height:20px;
+		width:20px;
+		background:url('images/grey-corner.png') no-repeat left bottom;
+	}
+	
+	#left-content #navigation ul li a	{
+		font-weight:bold;
+		color:#fff;
+		display:block;
+		padding:7px 40px 9px;
+		background:#666 url('images/darkgrey-fold.png') no-repeat bottom right;
+		font-size:22px;
+		line-height:1em;
+	}
+	
+	#left-content #navigation ul li.home a:hover, #left-content #navigation ul li.home a.active	{
+		background:#318df2 url('images/blue-fold.png') no-repeat bottom right;
+	}
+	
+	#left-content #navigation ul li.home a:hover + div.corner, #left-content #navigation ul li.home a.active + div.corner	{
+		height:10px;
+		width:20px;
+		background:url('images/blue-corner-s.png') no-repeat left bottom;
+	}
+	
+
+	#left-content #navigation ul li.topics a:hover, #left-content #navigation ul li.topics a.active	{
+		background:#EE280B url('images/red-fold.png') no-repeat bottom right;
+	}
+	
+	#left-content #navigation ul li.topics a:hover + div.corner, #left-content #navigation ul li.topics a.active + div.corner	{
+		height:10px;
+		width:20px;
+		background:url('images/red-corner-s.png') no-repeat left bottom;
+	}
+	
+	#left-content #navigation ul li.feeds a:hover, #left-content #navigation ul li.feeds a.active	{
+		background:#f26731 url('images/orange-fold.png') no-repeat bottom right;
+	}
+	
+	#left-content #navigation ul li.feeds a:hover + div.corner, #left-content #navigation ul li.feeds a.active + div.corner	{
+		height:20px;
+		width:20px;
+		background:url('images/orange-corner.png') no-repeat left bottom;
+	}
+	
+	#left-content div.box form#searchform	{
+		margin-left:40px;
+		width:300px;
+	}
+	
+	#left-content div.box form#searchform input.text	{
+		font-family:"helvetica neue", arial, helvetica, sans-serif;
+		border:none;
+		width:183px;
+		font-weight:bold;
+		font-size:17px;
+		color:#666;
+		padding:5px;
+		border-top:1px solid #eee;
+		border-left:1px solid #eee;
+		border-bottom:1px solid #ccc;
+		border-right:1px solid #ccc;
+		margin-right:5px;
+	}
+	
+	#left-content div.box form#searchform input.button	{
+		font-family:"helvetica neue", arial, helvetica, sans-serif;
+		background:#318df2 url('images/blue-fold.png') no-repeat bottom right;
+		border:none;
+		color:#fff;
+		padding:5px 20px 5px 10px;
+		width:92px;
+		font-weight:bold;
+		font-size:16px;
+		cursor:pointer;
+	}
+	
+	#left-content div.box form#searchform input.button:hover	{
+		background:#c331f2 url('images/purple-fold.png') no-repeat bottom right;
+	}
+	
+	#left-content div.box ul li a {
+	  font-size:17px;
+	}
+	
+	#left-content div.box div.textwidget {
+	  padding:0 40px;
+	  line-height:22px;
+	  color:#666;
+	}
+	
+	#left-content div.box div#calendar_wrap {
+	  margin: 0 20px 0 40px;
+	}
+	  #left-content div.box div#calendar_wrap table#wp-calendar {
+	  }
+	  
+	  #left-content div.box div#calendar_wrap table#wp-calendar caption {
+	    font-weight:bold;
+	    padding:10px 0;
+	    font-size:16px;
+	    background:#ddd;
+	  }
+	  
+	  #left-content div.box div#calendar_wrap table#wp-calendar thead,
+	  #left-content div.box div#calendar_wrap table#wp-calendar tbody {
+	    background:#ddd;
+	    font-size:17px;
+	    font-weight:bold;
+	  }
+	  
+	  #left-content div.box div#calendar_wrap table#wp-calendar td {
+	    padding:5px;
+	  }
+
+#right-content	{
+	float:right;
+	width:600px;
+	padding-left:20px;
+}
+
+#posts	{
+}
+
+#posts div.shallow-post	{
+	width:290px;
+	margin:0 20px 40px 0;
+	float:left;
+}
+
+#posts div.alt	{
+	margin-right:0;
+}
+
+#posts div.shallow-post div.shallow-image	{
+	margin:0 10px 10px 0;
+}
+
+#post div.shallow-post div.shallow-image a	{
+	display:block;
+}
+
+#posts div.shallow-post div.shallow-overlay	{
+	position:absolute;
+	z-index:3000;
+	width:290px;
+	height:120px;
+	background:url('images/shallowoverlay.png') no-repeat;
+}
+
+#posts div.shallow-post h3 a	{
+	color:#318df2;
+	font-size:18px;
+	margin-bottom:3px;
+	display:block;
+}
+
+#posts div.shallow-post h3 a:hover	{
+	color:#8FBE00;
+}
+
+#posts div.shallow-post span	{
+	font-weight:bold;
+	color:#bbb;
+	font-size:12px;
+	display:block;
+	margin-bottom:7px;
+}
+
+#posts div.shallow-post p	{
+	line-height:1.6em;
+	font-size:12px;
+	color:#666;
+}
+
+#posts div.shallow-post p a	{
+	color:#318df2;
+}
+
+#posts div.shallow-post p a:hover	{
+	color:#8FBE00;
+}
+
+#posts div.shallow-post span.perma	{
+	margin-top:20px;
+	float:left;
+}
+
+#posts div.shallow-post span.perma a	{
+	padding:5px 20px 5px 10px;
+	background:#318df2 url('images/blue-fold.png') no-repeat bottom right;
+	color:#fff;
+	
+}
+
+#posts div.shallow-post span.perma a:hover	{
+	background:#8FBE00 url('images/green-fold.png') no-repeat bottom right;
+}
+
+#posts div.shallow-post span.comment	{
+	margin-top:15px;
+	float:right;
+	padding:5px 0;
+	background:#ddd url('images/ddd-fold.png') no-repeat bottom right;
+}
+
+#posts div.shallow-post span.comment a	{
+	padding:0 25px 0 15px;
+	margin:0 0 0 15px;
+	color:#666;
+	background: url('images/comment.png') no-repeat left;
+}
+
+#posts div.shallow-post span.comment a:hover	{
+	color:#8FBE00;
+	background: url('images/green-comment.png') no-repeat left;
+}
+
+#post	{
+	padding:20px;
+	margin-bottom:20px;
+	background-color:#fff;
+}
+
+#post h2	{
+	color:#318df2;
+	font-size:28px;
+	line-height:1.5em;
+	margin-bottom:0.5em;
+	display:block;
+}
+
+#post span#meta	{
+	font-weight:bold;
+	color:#aaa;
+	font-size:14px;
+	display:block;
+}
+
+	#post span.meta a.author:hover	{
+		color:#ff0066 !important;
+	}
+
+#post div#context	{
+	
+}
+
+	#post img.alignleft	{
+		float:left;
+	}
+	
+	#post img.alignright	{
+		float:right;
+	}
+
+	#post div#context p	{
+		font-size:12px;
+		line-height:1.6em;
+		margin:0 0 1.33em;
+		color:#666;
+	}
+	
+	#post div#context blockquote p	{
+		padding-left:20px;
+		margin-left:20px;
+		border-left:1px solid #8FBE00;
+		color:#666;
+		font-style:italic;
+	}
+	
+	#post div#context a.img	{
+		border:none;
+	}
+	
+	#post div#context h3	{
+		font-size:18px;
+		line-height:1.8em;
+		color:#333;
+		margin-bottom:5px;
+	}
+	
+	#post div#context h4	{
+		font-size:14px;
+		line-height:1.6em;
+		color:#444;
+		margin-bottom:5px;
+	}
+	
+	#post div#context a	{
+		color:#8FBE00;
+		border-bottom:1px solid #8FBE00;
+	}
+	
+	#post div#context a:hover	{
+		color:#318df2;
+		border-bottom-color:#318df2;
+	}
+	
+	#post div#context ul	{
+		margin-bottom:1.33em;
+		padding-left:20px;
+	}
+	
+	#post div#context ol	{
+		margin-bottom:1.33em;
+		padding-left:20px;
+	}
+	
+	#post div#context ul li, #post ol li	{
+		font-size:12px;
+		color:#666;
+		margin-bottom:5px;
+		line-height:1.6em;
+	}
+	
+	#post div#context ul li	{
+		list-style:circle;
+	}
+	
+#post span.meta	{
+	font-weight:bold;
+	font-size:12px;
+	display:block;
+	color:#aaa;
+}
+
+	#post span.meta a	{
+		color:#8FBE00;
+	}
+	
+h2.search	{
+	background:#c331f2;
+	color:#fff;
+	padding:10px 20px;
+	font-weight:bold;
+	font-size:22px;
+	width:auto;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+
+h2.topic	{
+	background:#EE280B;
+	color:#fff;
+	padding:10px 20px;
+	font-weight:bold;
+	font-size:22px;
+	width:auto;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+
+h2.feeds	{
+	background:#f26731;
+	color:#fff;
+	padding:10px 20px;
+	font-weight:bold;
+	font-size:22px;
+	width:auto;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+
+#related ul	{
+	padding-bottom:10px;
+}
+
+#related ul li a	{
+	background:#ddd url('images/ddd-fold.png') no-repeat bottom right;
+	padding:10px 30px 10px 20px;
+	width:auto;
+	display:inline-block;
+	margin-bottom:10px;
+	color:#666;
+}
+
+#related ul li a:hover	{
+	background:#8FBE00 url('images/green-fold.png') no-repeat bottom right;
+	color:#fff;
+}
+
+#comments	{
+	margin-bottom:20px;
+}
+
+	#comments h2, #related h2	{
+		background:#8FBE00;
+		color:#fff;
+		padding:10px 20px;
+		font-weight:bold;
+		font-size:22px;
+		width:auto;
+		text-transform:uppercase;
+		margin-bottom:20px;
+	}
+	
+	#comments h3	{
+		font-weight:bold;
+		color:#666;
+		display:block;
+		padding:10px 20px;
+		background-color:#ddd;
+		font-size:20px;
+		margin-bottom:10px;
+	}
+	
+	#comments div.comment	{
+		padding:20px 20px 20px 20px;
+		margin-bottom:20px;
+		background:#fff;
+	}
+	
+	#comments div.comment div.comment-details	{
+		color:#666;
+		width:auto;
+	}
+	
+	#comments div.comment div.comment-details span	{
+		font-weight:bold;
+		font-size:12px;
+		display:block;
+		color:#aaa;
+	}
+	
+	#comments div.comment div.comment-details span strong	{
+		color:#666;
+	}
+	
+	#comments div.comment div.comment-details a	{
+		font-weight:bold;
+	}
+	
+	#comments div.comment div.comment-details a:hover	{
+		color:#318df2;
+	}
+
+	#comments div.comment div.comment-context p	{
+		color:#666;
+		font-size:12px;
+		line-height:1.6em;
+		margin:0 0 1.33em 0;
+	}
+
+	#comments form	{
+		width:600px;
+	}
+		
+	form p {
+	    padding: 7px 0;
+	    margin: 0 !important;
+	    line-height: 0 !important;
+		clear:both;
+	}
+		
+	form p label {
+	    float: left;
+	    display: block;
+	    width: 100px;
+	    margin: 5px 20px 10px 0;
+	    text-align: right;
+	    font: bold 1.4em "helvetica neue", arial, helvetica, sans-serif;
+		text-transform: uppercase;
+		color:#999;
+	}
+	
+	form p input, form p textarea {
+		font-family:"helvetica neue", arial, helvetica, sans-serif;
+		border:none;
+		font-weight:bold;
+		font-size:14px;
+		color:#666;
+		padding:5px;
+		border-top:1px solid #eee;
+		border-left:1px solid #eee;
+		border-bottom:1px solid #ccc;
+		border-right:1px solid #ccc;
+	}
+	
+	form p input {
+	    width: 465px;
+	}
+	
+	#contact-form p input, #contact-form p textarea	{
+		width:425px;
+	}	
+	
+	form p textarea {
+    font: normal 14px "helvetica neue", arial, helvetica, sans-serif;
+    line-height: 1.4em;
+    width: 465px;
+    height:200px;
+	}
+	
+	form p input.submit, #contact-form p input.submit	{
+		margin-left:120px;
+		font-family:"helvetica neue", arial, helvetica, sans-serif;
+		background:#8FBE00 url('images/blue-fold.png') no-repeat bottom right;
+		border:none;
+		color:#fff;
+		padding:5px 20px 5px 10px;
+		font-weight:bold;
+		font-size:16px;
+		cursor:pointer;
+		width:475px;
+		text-transform:uppercase;
+	}
+	
+	#commentform p input.submit	{
+		background:#8FBE00 url('images/green-fold.png') no-repeat bottom right;
+	}
+	
+	#contact-form p input.submit	{
+		background:#ff0066 url('images/pink-fold.png') no-repeat bottom right;
+		width:435px;
+	}
+	
+#topic-cloud	{
+	list-style-type:none;
+	padding-top:10px;
+}
+
+	#topic-cloud li	{
+		float:left;
+		margin-right:20px;
+	}
+	
+	#topic-cloud li a	{
+		background:#ddd url('images/ddd-fold.png') no-repeat bottom right;
+		color:#666;
+		padding:10px 20px;
+		font-weight:bold;
+		font-size:16px;
+		width:auto;
+		display:inline-block;
+		text-transform:uppercase;
+		margin-bottom:20px;
+	}
+	
+	#topic-cloud li a:hover	{
+		background:#EE280B url('images/red-fold.png') no-repeat bottom right;
+		color:#fff;
+	}
+	
+#feed-list {
+	
+}
+
+	#feed-list li	{
+		float:left;
+		margin-right:20px;
+	}
+
+	#feed-list li a	{
+		background:#ddd url('images/ddd-fold.png') no-repeat bottom right;
+		color:#666;
+		padding:10px 20px;
+		font-weight:bold;
+		display:inline-block;
+		font-size:16px;
+		width:auto;
+		text-transform:uppercase;
+		margin-bottom:20px;
+	}
+	
+	#feed-list li a:hover	{
+		background:#f26731 url('images/orange-fold.png') no-repeat bottom right;
+		color:#fff;
+	}
+
+.whitey	{
+	background:#fff;
+	margin-left:400px;
+	padding:20px 0 20px 20px;
+	margin-bottom:20px;
+}
+
+#pagination	{
+	width:560px;
+}
+
+	#pagination a.previous	{
+		float:left;
+	}
+	
+	#pagination a.next	{
+		float:right;
+	}
+	
+	#pagination a	{
+		font-size:24px;
+		color:#318df2;
+		font-weight:bold;
+	}
+	
+	#pagination a:hover	{
+		color:#67a8f0;
+	}
+
+#footer	{
+	width:560px;
+}
+
+	#footer p	{
+		float:left;
+		color:#aaa;
+	}
+	
+	#footer ul	{
+		float:right;
+	}
+	
+	#footer ul li	{
+		float:left;
+		margin-left:10px;
+	}
+	
+	#footer ul li a	{
+		font-weight:bold;
+		color:#318df2;
+	}
+	
+	#footer ul li a:hover	{
+		color:#ff0066;
+	}
+	
+.gallery	{
+	margin:0 !important;
+	padding:0 0 10px 0 !important;
+	width:560px !important;
+}
+
+	.gallery a	{
+		border:none !important;
+	}
+	
+	.gallery-item	{
+		margin:0 8px 0 0 !important;
+		width:132px !important;
+	}
+	
+	.gallery-icon {
+		margin:0 !important;
+		padding-bottom:5px !important;
+		width:132px !important;
+	}
+	
+	.gallery img {
+		border:medium none !important;
+		height:132px;
+		width:132px;
+		margin:0 !important;
+		padding:0 !important;
+	}
+	
+	.gallery img:hover	{
+		opacity:0.9;
+	}

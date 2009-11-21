@@ -1,0 +1,56 @@
+#long	{
+	background:#fff url('images/pink-logo-bg.png') no-repeat left;
+}
+
+#header-corner	{
+	background-position:0 -220px;
+}
+
+#sub	{
+	color:#ff0066;
+}
+
+#left-content div.box form#searchform input.button	{
+	background:#ff0066 url('images/pink-fold.png') no-repeat bottom right;
+}
+
+#posts div.shallow-post h3 a	{
+	color:#ff0066;
+}
+
+#posts div.shallow-post span.perma a	{
+	background:#ff0066 url('images/pink-fold.png') no-repeat bottom right;
+}
+
+#post h2	{
+	color:#ff0066;
+}
+
+	
+	#post div#context a	{
+		color:#ff0066;
+		border-bottom:1px solid #ff0066;
+	}
+	
+	#comments div.comment div.comment-details a	{
+		color:#ff0066;
+	}
+
+form p input.submit	{
+	background:#ff0066;
+}
+
+#pagination a	{
+	font-size:2.4em;
+	color:#ff0066;
+}
+
+#pagination a:hover	{
+	opacity:0.8;
+	color:#ff0066;
+
+}
+
+#footer ul li a	{
+	color:#ff0066;
+}
