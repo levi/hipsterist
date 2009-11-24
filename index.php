@@ -14,12 +14,12 @@
 					<div class="shallow-image">
 						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 						<div class="shallow-overlay"></div>
-							<img src="http://hipsterist.com/wp-content/themes/hipsterist/thumb.php?src=<?=$data[0]?>&amp;w=290&amp;h=120&amp;zc=1&amp;q=90" width="290" height="120" alt="<?php the_title(); ?> Thumbnail" />
+							<img src="<?php bloginfo('template_url'); ?>/lib/thumb.php?src=<?=$data[0]?>&amp;w=290&amp;h=120&amp;zc=1&amp;q=90" width="290" height="120" alt="<?php the_title(); ?> Thumbnail" />
 						</a>
 					</div>
 				<?php endif ?>
 				<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-				<span class="date"><?php the_time('l, F jS, Y'); ?></span>
+				<span class="date"><?php the_time('l, F jS, Y'); ?><?php edit_post_link('edit',' &bull; ',''); ?></span>
 				<?php the_excerpt(); ?>
 				<span class="perma"><a href="<?php the_permalink(); ?>">Keep Reading &raquo;</a></span>
 				<span class="comment"><?php comments_popup_link('0', '1', '%'); ?></span>

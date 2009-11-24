@@ -1,3 +1,5 @@
+/* @override http://wordpress.dev/wp-content/themes/hipsterist/style.css */
+
 /*
 	Theme Name: Hipsterist
 	Theme URI: http://hipsterist.com/theme/
@@ -48,53 +50,46 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 .center	{
 	text-align:center;
 }
-
-#header	{
-	padding-top:20px;
-	margin-left:20px;
-	min-width:980px;
+		
+#sub	{
+	height:20px;
+	float: left;
+	font-weight:bold;
+	color:#318df2;
+	font-size:18px;
+	position: absolute;
+	left: 400px;
+	right: 0;
+	padding: 40px 0 15px 20px;
+	background-color: #fffeff;
+	margin-top: 20px;
 }
-
-	#long	{
-		background:#fff url('images/logo-bg.png') no-repeat left;
-		width:100%;
-		height:75px;
-	}
-
-	#logo	{
-		padding:7px 60px 20px 40px;
-		float:left;
-		width:300px;
-	}
-	
-	#logo a	{
-		color:#fff;
-		font-size:45px;
-		font-weight:bold;
-		display:block;
-		text-shadow:rgba(0, 0, 0, 0.2) 0 2px 0;
-		width:296px;
-		height:43px;
-	}
-	
-	#sub	{
-		height:20px;
-		padding:40px 0 20px 20px;
-		font-weight:bold;
-		color:#318df2;
-		font-size:18px;
-	}
-	
-	#header-corner	{
-		height:20px;
-		width:20px;
-		background:url('images/corners.png') no-repeat 0 -70px;
-	}
 	
 #left-content	{
 	float:left;
 	width:360px;
+	margin-top: 20px;
 }
+
+	#left-content #logo a	{
+    color:#fff;
+    font-size: 40px;
+    font-weight: bold;
+    display:block;
+    text-shadow: rgba(0,0,0,0.14) 0 2px 1px;
+    width:296px;
+    text-transform: uppercase;
+    line-height: 40px;
+    width:260px;
+    background-color: #318DF2;
+    padding: 15px 60px 15px 40px;
+  }
+
+  #left-content #logo div.corner {
+    height:20px;
+    width:20px;
+    background:url('images/corners.png') no-repeat 0 -70px;
+  }
 
 	#left-content div.box	{
 		margin-bottom:40px;
@@ -306,6 +301,7 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 	float:right;
 	width:600px;
 	padding-left:20px;
+	margin-top: 120px;
 }
 
 #posts	{
@@ -344,7 +340,8 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 	display:block;
 }
 
-#posts div.shallow-post h3 a:hover	{
+#posts div.shallow-post h3 a:hover,
+#posts div.shallow-post span a:hover	{
 	color:#8FBE00;
 }
 
@@ -354,6 +351,10 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 	font-size:12px;
 	display:block;
 	margin-bottom:7px;
+}
+
+#posts div.shallow-post span a {
+	color:#318df2;
 }
 
 #posts div.shallow-post p	{

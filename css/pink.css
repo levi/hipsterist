@@ -1,8 +1,8 @@
-#long	{
-	background:#fff url('images/pink-logo-bg.png') no-repeat left;
+#left-content #logo a	{
+  background-color:#ff0066;
 }
 
-#header-corner	{
+#left-content #logo div.corner {
 	background-position:0 -220px;
 }
 
@@ -11,7 +11,7 @@
 }
 
 #left-content div.box form#searchform input.button	{
-	background:#ff0066 url('images/pink-fold.png') no-repeat bottom right;
+	background:#ff0066 url('../images/pink-fold.png') no-repeat bottom right;
 }
 
 #posts div.shallow-post h3 a	{
@@ -19,18 +19,21 @@
 }
 
 #posts div.shallow-post span.perma a	{
-	background:#ff0066 url('images/pink-fold.png') no-repeat bottom right;
+	background:#ff0066 url('../images/pink-fold.png') no-repeat bottom right;
 }
 
 #post h2	{
 	color:#ff0066;
 }
-
 	
 	#post div#context a	{
 		color:#ff0066;
 		border-bottom:1px solid #ff0066;
 	}
+	
+	#post div#context blockquote p	{
+  	border-left:1px solid #ff0066;
+  }
 	
 	#comments div.comment div.comment-details a	{
 		color:#ff0066;
