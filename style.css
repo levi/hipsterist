@@ -1,5 +1,7 @@
 /* @override http://wordpress.dev/wp-content/themes/hipsterist/style.css */
 
+/* @override http://wordpress.dev/wp-content/themes/hipsterist/style.css */
+
 /*
 	Theme Name: Hipsterist
 	Theme URI: http://hipsterist.com/theme/
@@ -109,36 +111,44 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 		font-size:20px;
 	}
 	
-	#left-content div.box ul	{
-		margin-left:40px;
+	#left-content div.box div.content {
+		padding: 0 20px 0 40px;
 	}
 	
 	#left-content div.box ul li {
 		margin-bottom:10px;
 	}
 	
-	#left-content div.box ul li a	{
-		font-size:12px;
+	#left-content div.box ul li a,
+	#left-content div.box div.content > div > a	{
+		font-size: 17px;
 		color:#666;
+	}
+	
+	#left-content div.box div.content > div > a {
+		font-size: 17px !important;
+		margin-bottom: 10px;
 	}
 	
 	#left-content div#widgets div.box ul	{
 		width:300px;
 	}
 	
-	#left-content div#widgets div.box ul li a	{
+	#left-content div#widgets div.box ul li a,
+	#left-content div.box div.content > div > a	{
 		background:#ddd url('images/ddd-fold.png') no-repeat bottom right;
 		padding:5px 20px 5px 10px;
 		width:auto;
 		display:inline-block;
 	}
-	
+		
 	#left-content div#widgets div.box ul li a:hover	{
 		background:#318df2 url('images/blue-fold.png') no-repeat bottom right;
 		color:#fff;
 	}
 	
-	#left-content div#category-list li.cat-item	{
+	#left-content div#category-list li.cat-item,
+	#left-content div.box div.content > div > a	{
 		float:left;
 		margin-right:10px;
 	}
@@ -165,13 +175,8 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 		margin-bottom:30px;
 	}
 	
-	#left-content #navigation ul	{
-		margin-left:0px;		
-	}
-	
 	#left-content #navigation ul li	{
 		margin-bottom:0;
-		line-height:10em;
 	}
 	
 	#left-content #navigation ul li div.corner	{
@@ -193,7 +198,7 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 		padding:7px 40px 9px;
 		background:#666 url('images/darkgrey-fold.png') no-repeat bottom right;
 		font-size:22px;
-		line-height:1em;
+		line-height:25px;
 	}
 	
 	#left-content #navigation ul li.home a:hover, #left-content #navigation ul li.home a.active	{
@@ -263,12 +268,7 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 		background:#c331f2 url('images/purple-fold.png') no-repeat bottom right;
 	}
 	
-	#left-content div.box ul li a {
-	  font-size:17px;
-	}
-	
 	#left-content div.box div.textwidget {
-	  padding:0 40px;
 	  line-height:22px;
 	  color:#666;
 	}
