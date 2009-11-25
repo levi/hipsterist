@@ -1,13 +1,13 @@
-#long	{
-	background:#fff url('../images/purple-logo-bg.png') no-repeat left;
-}
-
-#header-corner	{
-	background-position:0 -250px;
-}
-
 #sub	{
 	color:#c331f2;
+}
+
+#left-content #logo a	{
+  background-color:#c331f2;
+}
+
+#left-content #logo div.corner {
+	background-position:0 -250px;
 }
 
 #left-content div.box form#searchform input.button	{

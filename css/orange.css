@@ -1,13 +1,13 @@
+#sub	{
+	color:#f26731;
+}
+
 #left-content #logo a	{
-  background-color:#8FBE00;
+  background-color:#f26731;
 }
 
 #left-content #logo div.corner {
 	background-position:0 -130px;
-}
-
-#sub	{
-	color:#f26731;
 }
 
 #left-content div.box form#searchform input.button	{
@@ -18,7 +18,8 @@
 	color:#f26731;
 }
 
-#posts div.shallow-post span.perma a	{
+#posts div.shallow-post span.perma a,
+#commentform p input.submit	{
 	background:#f26731 url('../images/orange-fold.png') no-repeat bottom right;
 }
 
@@ -35,12 +36,14 @@
 	border-left:1px solid #f26731;
 }
 
+#post span.meta a,
 #comments div.comment div.comment-details a	{
 	color:#f26731;
 }
 
-
-form p input.submit	{
+form p input.submit,
+#comments h2, 
+#related h2	{
 	background:#f26731;
 }
 

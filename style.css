@@ -424,7 +424,7 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 }
 
 	#post span.meta a.author:hover	{
-		color:#ff0066 !important;
+		color:#ff0066;
 	}
 
 #post div#context	{

@@ -10,7 +10,7 @@ function hipsterist_page_color()
 {
 	global $hipsterist_settings;
 	
-	$color = 'blue';
+	$color = $hipsterist_settings->settings->default_color;
 
 	if (is_front_page() === TRUE) {
 		$color = $hipsterist_settings->settings->homepage_color;
