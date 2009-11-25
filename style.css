@@ -1,7 +1,3 @@
-/* @override http://wordpress.dev/wp-content/themes/hipsterist/style.css */
-
-/* @override http://wordpress.dev/wp-content/themes/hipsterist/style.css */
-
 /*
 	Theme Name: Hipsterist
 	Theme URI: http://hipsterist.com/theme/
@@ -84,7 +80,7 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
     line-height: 40px;
     width:260px;
     background-color: #318DF2;
-    padding: 15px 60px 15px 40px;
+    padding: 12px 60px 15px 40px;
   }
 
   #left-content #logo div.corner {
