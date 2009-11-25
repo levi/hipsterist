@@ -8,7 +8,14 @@ if ( function_exists('register_sidebar') )
         'after_title' => '</span></h4><div class="content">',
 ));
 
-if (is_admin()) {
+require(TEMPLATEPATH.'/lib/settings.php');
+
+$hipsterist_settings = new Settings();
+
+require(TEMPLATEPATH.'/lib/template.php');
+
+if (is_admin()) 
+{
 	require(TEMPLATEPATH.'/lib/admin.php');
 }
 

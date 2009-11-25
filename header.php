@@ -16,9 +16,7 @@
 	<![endif]-->
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-	<?php if ($color): ?>
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/<?php echo $color; ?>.css" type="text/css" media="screen" />
-	<?php endif ?>
+	<?php echo hipsterist_page_color(); ?>
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Article Feed" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	
