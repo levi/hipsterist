@@ -763,7 +763,15 @@ h2.title-header	{
 		color:#fff;
 	}
 
-.whitey	{
+.whitey-pagination	{
+	background:#fff;
+	padding:20px 0 20px 20px;
+	position: absolute;
+	right: 0;
+	left: 400px;
+}
+
+.whitey {
 	background:#fff;
 	margin-left:400px;
 	padding:20px 0 20px 20px;

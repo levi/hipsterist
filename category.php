@@ -38,28 +38,28 @@
 			<?php endif; ?>
 			<div class="clear"></div>
 		</div>
+		
+		<?php
+			$next = get_next_posts_link('Next &raquo;');
+			$previous = get_previous_posts_link('&laquo; Previous');
+		?>
+		<?php if ($next != '' || $previous != ''): ?>
+		<div class="whitey-pagination">
+			<div id="pagination">
+				<div class="left">
+					<?php previous_posts_link('&laquo; Previous'); ?>
+				</div>
+				<div class="right">
+					<?php next_posts_link('Next &raquo;'); ?>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<?php endif ?>
 	</div>
 	
 	<div class="clear"></div>		
 	
 </div>
-
-<?php
-	$next = get_next_posts_link('Next &raquo;');
-	$previous = get_previous_posts_link('&laquo; Previous');
-?>
-<?php if ($next != '' || $previous != ''): ?>
-<div class="whitey">
-	<div id="pagination">
-		<div class="left">
-			<?php previous_posts_link('&laquo; Previous'); ?>
-		</div>
-		<div class="right">
-			<?php next_posts_link('Next &raquo;'); ?>
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-<?php endif ?>
 
 <?php get_footer(); ?>
