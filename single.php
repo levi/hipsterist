@@ -1,7 +1,7 @@
-<?php $color = "green"; include 'header.php'; ?>
+<?php include_header('post') ?>
 
 <div class="wrapper">
-	<?php $active = "none"; include "sidebar.php"; ?>
+	<?php include_sidebar('post') ?>
 	
 	<div id="right-content">
 		<div id="post">

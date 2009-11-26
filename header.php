@@ -1,9 +1,3 @@
-<?php
-/**
- * @package Wordpress
- * @subpackage Hipsterist
- */
-?>
 <!DOCTYPE html>
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
@@ -16,7 +10,12 @@
 	<![endif]-->
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-	<?php echo hipsterist_page_color(); ?>
+	<?php echo hipsterist_page_color($page); ?>
+	<?php echo hipsterist_tag_color(); ?>
+	<?php echo hipsterist_search_color(); ?>
+	<?php echo hipsterist_post_link_color(); ?>
+	<?php echo hipsterist_link_color(); ?>
+	<?php echo hipsterist_category_link_color(); ?>
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Article Feed" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	

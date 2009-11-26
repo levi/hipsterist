@@ -12,7 +12,15 @@ class Settings
 
 	function __construct() 
 	{
+		$this->defaults->default_color = 'blue';
 		$this->defaults->homepage_color = 'blue';
+		$this->defaults->hover_color = 'pink';
+		$this->defaults->post_color = 'green';
+		$this->defaults->page_color = 'orange';
+		$this->defaults->category_color = 'red';
+		$this->defaults->tags_color = 'red';
+		$this->defaults->search_color = 'purple';
+		
 		$this->get_settings();
 	}
 

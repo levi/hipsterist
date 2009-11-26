@@ -14,11 +14,15 @@
 	background:#8FBE00 url('../images/green-fold.png') no-repeat bottom right;
 }
 
-#posts div.shallow-post h3 a	{
+#posts div.shallow-post h3 a,
+#posts div.shallow-post span a,
+#footer p a	{
 	color:#8FBE00;
 }
 
-#posts div.shallow-post span.perma a	{
+#posts div.shallow-post span.perma a,
+#commentform p input.submit,
+#left-content div#widgets div.box ul li a:hover	{
 	background:#8FBE00 url('../images/green-fold.png') no-repeat bottom right;
 }
 
@@ -35,11 +39,16 @@
 	border-left:1px solid #8FBE00;
 }
 
+#post span.meta a,
 #comments div.comment div.comment-details a	{
 	color:#8FBE00;
 }
 
-form p input.submit	{
+h2.title-header,
+form p input.submit,
+#comments h2, 
+#related h2,
+#commentform p input.submit	{
 	background:#8FBE00;
 }
 

@@ -14,12 +14,15 @@
 	background:#f26731 url('../images/orange-fold.png') no-repeat bottom right;
 }
 
-#posts div.shallow-post h3 a	{
+#posts div.shallow-post h3 a,
+#posts div.shallow-post span a,
+#footer p a	{
 	color:#f26731;
 }
 
 #posts div.shallow-post span.perma a,
-#commentform p input.submit	{
+#commentform p input.submit,
+#left-content div#widgets div.box ul li a:hover	{
 	background:#f26731 url('../images/orange-fold.png') no-repeat bottom right;
 }
 
@@ -41,6 +44,7 @@
 	color:#f26731;
 }
 
+h2.title-header,
 form p input.submit,
 #comments h2, 
 #related h2	{

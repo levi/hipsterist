@@ -1,24 +1,28 @@
-#long	{
-	background:#fff url('../images/red-logo-bg.png') no-repeat left;
-}
-
-#header-corner	{
-	background-position:0 -100px;
-}
-
 #sub	{
 	color:#EE280B;
+}
+
+#left-content #logo a	{
+  background-color:#EE280B;
+}
+
+#left-content #logo div.corner {
+	background-position:0 -100px;
 }
 
 #left-content div.box form#searchform input.button	{
 	background:#EE280B url('../images/red-fold.png') no-repeat bottom right;
 }
 
-#posts div.shallow-post h3 a	{
+#posts div.shallow-post h3 a,
+#posts div.shallow-post span a,
+#footer p a	{
 	color:#EE280B;
 }
 
-#posts div.shallow-post span.perma a	{
+#posts div.shallow-post span.perma a,
+#commentform p input.submit,
+#left-content div#widgets div.box ul li a:hover	{
 	background:#EE280B url('../images/red-fold.png') no-repeat bottom right;
 }
 
@@ -35,11 +39,15 @@
 	border-left:1px solid #EE280B;
 }
 
+#post span.meta a,
 #comments div.comment div.comment-details a	{
 	color:#ee280b;
 }
 
-form p input.submit	{
+h2.title-header,
+form p input.submit,
+#comments h2, 
+#related h2	{
 	background:#EE280B;
 }
 

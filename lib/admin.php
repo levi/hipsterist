@@ -39,6 +39,10 @@ function hipsterist_settings() {
 					<td><?php echo hipsterist_color_dropdown('homepage'); ?></td>
 				</tr>
 				<tr valign="top">
+					<th scope="row"><label for="hipsterist_hover_color"><?php _e('Link Hover Color'); ?></label></th>
+					<td><?php echo hipsterist_color_dropdown('hover'); ?></td>
+				</tr>
+				<tr valign="top">
 					<th scope="row"><label for="hipsterist_post_color"><?php _e('Post Color'); ?></label></th>
 					<td><?php echo hipsterist_color_dropdown('post'); ?></td>
 				</tr>
@@ -127,6 +131,7 @@ function hipsterist_save_settings()
 		$settings = $hipsterist_settings->settings;
 		$settings->default_color = $_POST['hipsterist_default_color'];
 		$settings->homepage_color = $_POST['hipsterist_homepage_color'];
+		$settings->hover_color = $_POST['hipsterist_hover_color'];
 		$settings->post_color = $_POST['hipsterist_post_color'];
 		$settings->page_color = $_POST['hipsterist_page_color'];
 		$settings->category_color = $_POST['hipsterist_category_color'];

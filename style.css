@@ -197,35 +197,68 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 		line-height:25px;
 	}
 	
-	#left-content #navigation ul li.home a:hover, #left-content #navigation ul li.home a.active	{
+	#left-content #navigation ul li.blue a:hover, #left-content #navigation ul li.blue a.active	{
 		background:#318df2 url('images/blue-fold.png') no-repeat bottom right;
 	}
 	
-	#left-content #navigation ul li.home a:hover + div.corner, #left-content #navigation ul li.home a.active + div.corner	{
+	#left-content #navigation ul li.blue a:hover + div.corner, #left-content #navigation ul li.blue a.active + div.corner	{
 		height:10px;
 		width:20px;
-		background:url('images/blue-corner-s.png') no-repeat left bottom;
+		background:url('images/corners.png') no-repeat 0 -70px;
 	}
 	
-
-	#left-content #navigation ul li.topics a:hover, #left-content #navigation ul li.topics a.active	{
+	#left-content #navigation ul li.red a:hover, #left-content #navigation ul li.red a.active	{
 		background:#EE280B url('images/red-fold.png') no-repeat bottom right;
 	}
 	
-	#left-content #navigation ul li.topics a:hover + div.corner, #left-content #navigation ul li.topics a.active + div.corner	{
+	#left-content #navigation ul li.red a:hover + div.corner, #left-content #navigation ul li.red a.active + div.corner	{
 		height:10px;
 		width:20px;
-		background:url('images/red-corner-s.png') no-repeat left bottom;
+		background:url('images/corners.png') no-repeat 0 -100px;
 	}
 	
-	#left-content #navigation ul li.feeds a:hover, #left-content #navigation ul li.feeds a.active	{
+	#left-content #navigation ul li.orange a:hover, #left-content #navigation ul li.orange a.active	{
 		background:#f26731 url('images/orange-fold.png') no-repeat bottom right;
 	}
 	
-	#left-content #navigation ul li.feeds a:hover + div.corner, #left-content #navigation ul li.feeds a.active + div.corner	{
-		height:20px;
+	#left-content #navigation ul li.orange a:hover + div.corner, #left-content #navigation ul li.orange a.active + div.corner	{
+		height:10px;
 		width:20px;
-		background:url('images/orange-corner.png') no-repeat left bottom;
+		background:url('images/corners.png') no-repeat 0 -130px;
+	}
+	
+	#left-content #navigation ul li.green a:hover, #left-content #navigation ul li.green a.active	{
+		background:#8FBE00 url('images/green-fold.png') no-repeat bottom right;
+	}
+	
+	#left-content #navigation ul li.green a:hover + div.corner, #left-content #navigation ul li.green a.active + div.corner	{
+		height:10px;
+		width:20px;
+		background:url('images/corners.png') no-repeat 0 -190px;
+	}
+	
+	#left-content #navigation ul li.pink a:hover, #left-content #navigation ul li.pink a.active	{
+		background:#ff0066 url('images/pink-fold.png') no-repeat bottom right;
+	}
+	
+	#left-content #navigation ul li.pink a:hover + div.corner, #left-content #navigation ul li.pink a.active + div.corner	{
+		height:10px;
+		width:20px;
+		background:url('images/corners.png') no-repeat 0 -220px;
+	}
+	
+	#left-content #navigation ul li.purple a:hover, #left-content #navigation ul li.purple a.active	{
+		background:#c331f2 url('images/purple-fold.png') no-repeat bottom right;
+	}
+	
+	#left-content #navigation ul li.purple a:hover + div.corner, #left-content #navigation ul li.purple a.active + div.corner	{
+		height:10px;
+		width:20px;
+		background:url('images/corners.png') no-repeat 0 -250px;
+	}
+	
+	#left-content #navigation ul li.last a:hover + div.corner, #left-content #navigation ul li.last a.active + div.corner {
+	  height:20px;
 	}
 	
 	#left-content div.box form#searchform	{
@@ -514,30 +547,7 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 		color:#8FBE00;
 	}
 	
-h2.search	{
-	background:#c331f2;
-	color:#fff;
-	padding:10px 20px;
-	font-weight:bold;
-	font-size:22px;
-	width:auto;
-	text-transform:uppercase;
-	margin-bottom:20px;
-}
-
-h2.topic	{
-	background:#EE280B;
-	color:#fff;
-	padding:10px 20px;
-	font-weight:bold;
-	font-size:22px;
-	width:auto;
-	text-transform:uppercase;
-	margin-bottom:20px;
-}
-
-h2.feeds	{
-	background:#f26731;
+h2.title-header	{
 	color:#fff;
 	padding:10px 20px;
 	font-weight:bold;
@@ -685,7 +695,7 @@ h2.feeds	{
 		color:#fff;
 		padding:5px 20px 5px 10px;
 		font-weight:bold;
-		font-size:16px;
+		font-size:22px;
 		cursor:pointer;
 		width:475px;
 		text-transform:uppercase;
@@ -764,11 +774,11 @@ h2.feeds	{
 	width:560px;
 }
 
-	#pagination a.previous	{
+	#pagination div.left	{
 		float:left;
 	}
 	
-	#pagination a.next	{
+	#pagination div.right	{
 		float:right;
 	}
 	
@@ -789,6 +799,10 @@ h2.feeds	{
 	#footer p	{
 		float:left;
 		color:#aaa;
+	}
+	
+	#footer p a {
+	  font-weight:bold;
 	}
 	
 	#footer ul	{

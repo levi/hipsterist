@@ -1,0 +1,66 @@
+#sub	{
+	color:#318df2;
+}
+
+#left-content #logo a	{
+  background-color:#318df2;
+}
+
+#left-content #logo div.corner {
+	background-position:0 -70px;
+}
+
+#left-content div.box form#searchform input.button	{
+	background:#318df2 url('../images/blue-fold.png') no-repeat bottom right;
+}
+
+#posts div.shallow-post h3 a,
+#posts div.shallow-post span a,
+#footer p a	{
+	color:#318df2;
+}
+
+#posts div.shallow-post span.perma a,
+#commentform p input.submit,
+#left-content div#widgets div.box ul li a:hover	{
+	background:#318df2 url('../images/blue-fold.png') no-repeat bottom right;
+}
+
+#post h2	{
+	color:#318df2;
+}
+
+#post div#context a	{
+	color:#318df2;
+	border-bottom:1px solid #318df2;
+}
+
+#post div#context blockquote p	{
+	border-left:1px solid #318df2;
+}
+
+#post span.meta a,
+#comments div.comment div.comment-details a	{
+	color:#318df2;
+}
+
+h2.title-header,
+form p input.submit,
+#comments h2, 
+#related h2	{
+	background:#318df2;
+}
+
+#pagination a	{
+	font-size:2.4em;
+	color:#318df2;
+}
+
+#pagination a:hover	{
+	opacity:0.8;
+	color:#318df2;
+}
+
+#footer ul li a	{
+	color:#318df2;
+}

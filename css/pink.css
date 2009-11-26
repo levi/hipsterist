@@ -14,11 +14,15 @@
 	background:#ff0066 url('../images/pink-fold.png') no-repeat bottom right;
 }
 
-#posts div.shallow-post h3 a	{
+#posts div.shallow-post h3 a,
+#posts div.shallow-post span a,
+#footer p a	{
 	color:#ff0066;
 }
 
-#posts div.shallow-post span.perma a	{
+#posts div.shallow-post span.perma a,
+#commentform p input.submit,
+#left-content div#widgets div.box ul li a:hover	{
 	background:#ff0066 url('../images/pink-fold.png') no-repeat bottom right;
 }
 
@@ -26,20 +30,24 @@
 	color:#ff0066;
 }
 	
-	#post div#context a	{
-		color:#ff0066;
-		border-bottom:1px solid #ff0066;
-	}
-	
-	#post div#context blockquote p	{
-  	border-left:1px solid #ff0066;
-  }
-	
-	#comments div.comment div.comment-details a	{
-		color:#ff0066;
-	}
+#post div#context a	{
+	color:#ff0066;
+	border-bottom:1px solid #ff0066;
+}
 
-form p input.submit	{
+#post div#context blockquote p	{
+	border-left:1px solid #ff0066;
+}
+
+#post span.meta a,
+#comments div.comment div.comment-details a	{
+	color:#ff0066;
+}
+
+h2.title-header,
+form p input.submit,
+#comments h2, 
+#related h2	{
 	background:#ff0066;
 }
 

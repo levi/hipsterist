@@ -1,7 +1,7 @@
-<?php get_header(); ?>
+<?php include_header(); ?>
 
 <div class="wrapper">
-	<?php get_sidebar(); ?>
+	<?php include_sidebar('home'); ?>
 	
 	<div id="right-content">
 		<div id="posts">
@@ -14,7 +14,7 @@
 					<div class="shallow-image">
 						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 						<div class="shallow-overlay"></div>
-							<img src="<?php bloginfo('template_url'); ?>/lib/thumb.php?src=<?=$data[0]?>&amp;w=290&amp;h=120&amp;zc=1&amp;q=90" width="290" height="120" alt="<?php the_title(); ?> Thumbnail" />
+							<img src="<?php echo $data[0] ?>" width="290" height="120" alt="<?php the_title(); ?> Thumbnail" />
 						</a>
 					</div>
 				<?php endif ?>
@@ -48,9 +48,12 @@
 <?php if ($next != '' || $previous != ''): ?>
 <div class="whitey">
 	<div id="pagination">
-		<?php apply_filters( 'next_posts_link_attributes', 'class="next"' ); ?>
-		<?php previous_posts_link('&laquo; Previous'); ?>
-		<?php next_posts_link('Next &raquo;'); ?>
+		<div class="left">
+			<?php previous_posts_link('&laquo; Previous'); ?>
+		</div>
+		<div class="right">
+			<?php next_posts_link('Next &raquo;'); ?>
+		</div>
 		<div class="clear"></div>
 	</div>
 </div>
