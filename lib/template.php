@@ -31,10 +31,6 @@ function hipsterist_page_color($current_page)
 		$color = $settings->post_color;
 	}
 	
-	if (is_page() === TRUE) {
-		$color = $settings->page_color;
-	}
-	
 	switch ($current_page) {
 		case 'tags':
 			$color = $settings->tags_color;
@@ -51,7 +47,7 @@ function hipsterist_page_color($current_page)
 		default:
 			if (preg_match('/(.+)-page$/', $current_page, $matches)) 
 			{
-				$color = $settings->{$matches[1].'-page_color'};
+				$color = ( isset($settings->{$matches[1].'-page_color'}) ) ? $settings->{$matches[1].'-page_color'} : $settings->page_color;
 			}
 		break;
 	}
@@ -145,8 +141,9 @@ function hipsterist_navigation($active)
 			
 			foreach ($pages as $page) {
 				$count = ($x == count($pages)) ? 'last' : '';
+				$color = ( isset($hipsterist_settings->settings->{$page->post_name.'-page_color'}) ) ? $hipsterist_settings->settings->{$page->post_name.'-page_color'} : $hipsterist_settings->settings->page_color;
 ?>
-				<li class="<?php echo $count ?> <?php echo $page->post_name; ?> <?php echo $hipsterist_settings->settings->{$page->post_name.'-page_color'}?>">
+				<li class="<?php echo $count ?> <?php echo $page->post_name; ?> <?php echo $color ?>">
 					<a href="<?php echo $page->guid ?>"<?php if ($active == $page->post_name): ?> class="active"<?php endif ?>><?php echo strtolower($page->post_title)?></a>
 					<div class="corner"></div>
 				</li>				
