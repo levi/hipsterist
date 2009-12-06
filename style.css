@@ -71,13 +71,13 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 
 	#left-content #logo a	{
     color:#fff;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: bold;
     display:block;
     text-shadow: rgba(0,0,0,0.14) 0 2px 1px;
     width:296px;
     text-transform: uppercase;
-    line-height: 40px;
+    line-height: 48px;
     width:260px;
     background-color: #318DF2;
     padding: 12px 60px 15px 40px;
@@ -388,7 +388,7 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 }
 
 #posts div.shallow-post p	{
-	line-height:1.6em;
+	line-height:19px;
 	font-size:12px;
 	color:#666;
 }
@@ -445,8 +445,8 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 #post h2	{
 	color:#318df2;
 	font-size:28px;
-	line-height:1.5em;
-	margin-bottom:0.5em;
+	line-height:42px;
+	margin-bottom:14px;
 	display:block;
 }
 
@@ -475,8 +475,8 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 
 	#post div#context p	{
 		font-size:12px;
-		line-height:1.6em;
-		margin:0 0 1.33em;
+		line-height:19px;
+		margin-bottom:15px;
 		color:#666;
 	}
 	
@@ -494,14 +494,14 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 	
 	#post div#context h3	{
 		font-size:18px;
-		line-height:1.8em;
+		line-height:32px;
 		color:#333;
 		margin-bottom:5px;
 	}
 	
 	#post div#context h4	{
 		font-size:14px;
-		line-height:1.6em;
+		line-height:22px;
 		color:#444;
 		margin-bottom:5px;
 	}
@@ -517,12 +517,12 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 	}
 	
 	#post div#context ul	{
-		margin-bottom:1.33em;
+		margin-bottom:18px;
 		padding-left:20px;
 	}
 	
 	#post div#context ol	{
-		margin-bottom:1.33em;
+		margin-bottom:28px;
 		padding-left:20px;
 	}
 	
@@ -530,7 +530,7 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 		font-size:12px;
 		color:#666;
 		margin-bottom:5px;
-		line-height:1.6em;
+		line-height:19px;
 	}
 	
 	#post div#context ul li	{
@@ -634,8 +634,8 @@ h2.title-header	{
 	#comments div.comment div.comment-context p	{
 		color:#666;
 		font-size:12px;
-		line-height:1.6em;
-		margin:0 0 1.33em 0;
+		line-height:19px;
+		margin-bottom:15px;
 	}
 
 	#comments form	{
@@ -643,28 +643,28 @@ h2.title-header	{
 	}
 		
 	form p {
-	    padding: 7px 0;
-	    margin: 0 !important;
-	    line-height: 0 !important;
-		clear:both;
+    padding: 7px 0;
+    margin: 0 !important;
+    line-height: 0 !important;
+    clear:both;
 	}
 		
 	form p label {
-	    float: left;
-	    display: block;
-	    width: 100px;
-	    margin: 5px 20px 10px 0;
-	    text-align: right;
-	    font: bold 1.4em "helvetica neue", arial, helvetica, sans-serif;
-		text-transform: uppercase;
-		color:#999;
+    float: left;
+    display: block;
+    width: 100px;
+    margin: 5px 20px 10px 0;
+    text-align: right;
+    font: bold 20px "helvetica neue", arial, helvetica, sans-serif;
+    text-transform: uppercase;
+    color:#999;
 	}
 	
 	form p input, form p textarea {
 		font-family:"helvetica neue", arial, helvetica, sans-serif;
 		border:none;
 		font-weight:bold;
-		font-size:14px;
+		font-size:20px;
 		color:#666;
 		padding:5px;
 		border-top:1px solid #eee;
@@ -681,12 +681,12 @@ h2.title-header	{
 		width:425px;
 	}	
 	
-	form p textarea {
-    font: normal 14px "helvetica neue", arial, helvetica, sans-serif;
-    line-height: 1.4em;
+  form p textarea {
+    font: normal 20px "helvetica neue", arial, helvetica, sans-serif;
+    line-height: 27px;
     width: 465px;
     height:200px;
-	}
+  }
 	
 	form p input.submit, #contact-form p input.submit	{
 		margin-left:120px;
