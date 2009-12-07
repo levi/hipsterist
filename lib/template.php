@@ -141,7 +141,7 @@ function hipsterist_navigation($active)
 			
 			foreach ($pages as $page) {
 				$count = ($x == count($pages)) ? 'last' : '';
-				$color = ( isset($hipsterist_settings->settings->{$page->post_name.'-page_color'}) ) ? $hipsterist_settings->settings->{$page->post_name.'-page_color'} : $hipsterist_settings->settings->page_color;
+				$color = ( isset($hipsterist_settings->settings->{$page->post_name.'-'.$page->id.'-page_color'}) ) ? $hipsterist_settings->settings->{$page->post_name.'-'.$page->id.'-page_color'} : $hipsterist_settings->settings->page_color;
 ?>
 				<li class="<?php echo $count ?> <?php echo $page->post_name; ?> <?php echo $color ?>">
 					<a href="<?php echo $page->guid ?>"<?php if ($active == $page->post_name): ?> class="active"<?php endif ?>><?php echo strtolower($page->post_title)?></a>
