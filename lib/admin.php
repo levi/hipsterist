@@ -110,7 +110,7 @@ function hipsterist_pages_colors()
 	foreach ($pages as $page) {
 		$ret .= '<tr valign="top">
 		<th scope="row"><label for="hipsterist_'.$page->post_name.'-'.$page->id.'-page_color">'.__($page->post_title).' Page Color</label></th>
-		<td>'.hipsterist_color_dropdown($page->post_name."-page").'</td>
+		<td>'.hipsterist_color_dropdown($page->post_name.'-'.$page->id."-page").'</td>
 		</tr>';
 	}
 	
