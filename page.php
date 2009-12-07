@@ -1,6 +1,6 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <?php $post_name = $wpdb->get_var($wpdb->prepare("SELECT post_name FROM wp_posts WHERE id = %s", get_the_ID())); ?>
-<?php include_header($post_name."-page") ?>
+<?php include_header($post_name.'-'.get_the_ID()."-page") ?>
 
 <div class="wrapper">
 	<?php include_sidebar($post_name); ?>
