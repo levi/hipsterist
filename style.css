@@ -1,11 +1,11 @@
 /*
 	Theme Name: Hipsterist
 	Theme URI: http://hipsterist.com/theme/
-	Description: A simple and elegant theme for Wordpress
+	Description: A trend-setting theme for trend-setting blogs.
 	Version: 1.0
 	Author: Levi McCallum
 	Author URI: http://levimccallum.com/
-	Tags: fixed witdh, two columns, widgets
+	Tags: blue, green, orange, pink, purple, red, two-columns, right-sidebar, fixed-width, custom-colors, theme-options
 */
 
 *	{ margin:0; padding:0; outline:0; }
@@ -464,14 +464,46 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 #post div#context	{
 	
 }
+	#post div#context .aligncenter,
+    #post div#context div.aligncenter {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
 
-	#post img.alignleft	{
-		float:left;
-	}
-	
-	#post img.alignright	{
-		float:right;
-	}
+    #post div#context .alignleft {
+       float: left;
+    }
+
+    #post div#context .alignright {
+       float: right;
+    }
+
+    #post div#context .wp-caption {
+       border: 1px solid #ddd;
+       text-align: center;
+       background-color: #f3f3f3;
+       padding-top: 4px;
+       margin: 10px;
+       /* optional rounded corners for browsers that support it */
+       -moz-border-radius: 3px;
+       -khtml-border-radius: 3px;
+       -webkit-border-radius: 3px;
+       border-radius: 3px;
+    }
+
+    #post div#context .wp-caption img {
+       margin: 0;
+       padding: 0;
+       border: 0 none;
+    }
+
+    #post div#context .wp-caption p.wp-caption-text {
+       font-size: 11px;
+       line-height: 17px;
+       padding: 0 4px 5px;
+       margin: 0;
+    }
 
 	#post div#context p	{
 		font-size:12px;
