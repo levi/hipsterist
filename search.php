@@ -10,12 +10,11 @@
 				<?php $x=0; ?>
 				<?php while (have_posts()) : the_post(); ?>
 					<div class="shallow-post<?php if ($x % 2) : ?> alt<?php endif; ?>">
-						<?php $data = get_post_meta($id, 'image'); ?>
-						<?php if ( ! empty($data[0])): ?>
+						<?php if (has_post_thumbnail()): ?>
 							<div class="shallow-image">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-								<div class="shallow-overlay"></div>
-									<img src="<?php echo $data[0] ?>" width="290" height="120" alt="<?php the_title(); ?> Thumbnail" />
+								<span class="shallow-overlay"></span>
+									<?php the_post_thumbnail(); ?>
 								</a>
 							</div>
 						<?php endif ?>

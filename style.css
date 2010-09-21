@@ -2,7 +2,7 @@
 	Theme Name: Hipsterist
 	Theme URI: http://hipsterist.com/theme/
 	Description: A trend-setting theme for trend-setting blogs.
-	Version: 1.0
+	Version: 1.1
 	Author: Levi McCallum
 	Author URI: http://levimccallum.com/
 	Tags: blue, green, orange, pink, purple, red, two-columns, right-sidebar, fixed-width, custom-colors, theme-options
@@ -337,25 +337,25 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 #posts	{
 }
 
-#posts div.shallow-post	{
+#posts .shallow-post	{
 	width:290px;
 	margin:0 20px 40px 0;
 	float:left;
 }
 
-#posts div.alt	{
+#posts .alt	{
 	margin-right:0;
 }
 
-#posts div.shallow-post div.shallow-image	{
+#posts .shallow-post .shallow-image	{
 	margin:0 10px 10px 0;
 }
 
-#post div.shallow-post div.shallow-image a	{
+#post .shallow-post .shallow-image a	{
 	display:block;
 }
 
-#posts div.shallow-post div.shallow-overlay	{
+#posts .shallow-post .shallow-overlay	{
 	position:absolute;
 	z-index:3000;
 	width:290px;
@@ -363,19 +363,19 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 	background:url('images/shallowoverlay.png') no-repeat;
 }
 
-#posts div.shallow-post h3 a	{
+#posts .shallow-post h3 a	{
 	color:#318df2;
 	font-size:18px;
 	margin-bottom:3px;
 	display:block;
 }
 
-#posts div.shallow-post h3 a:hover,
-#posts div.shallow-post span a:hover	{
+#posts .shallow-post h3 a:hover,
+#posts .shallow-post span a:hover	{
 	color:#8FBE00;
 }
 
-#posts div.shallow-post span	{
+#posts .shallow-post span	{
 	font-weight:bold;
 	color:#bbb;
 	font-size:12px;
@@ -383,55 +383,55 @@ ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, form div div, 
 	margin-bottom:7px;
 }
 
-#posts div.shallow-post span a {
+#posts .shallow-post span a {
 	color:#318df2;
 }
 
-#posts div.shallow-post p	{
+#posts .shallow-post p	{
 	line-height:19px;
 	font-size:12px;
 	color:#666;
 }
 
-#posts div.shallow-post p a	{
+#posts .shallow-post p a	{
 	color:#318df2;
 }
 
-#posts div.shallow-post p a:hover	{
+#posts .shallow-post p a:hover	{
 	color:#8FBE00;
 }
 
-#posts div.shallow-post span.perma	{
+#posts .shallow-post span.perma	{
 	margin-top:20px;
 	float:left;
 }
 
-#posts div.shallow-post span.perma a	{
+#posts .shallow-post span.perma a	{
 	padding:5px 20px 5px 10px;
 	background:#318df2 url('images/blue-fold.png') no-repeat bottom right;
 	color:#fff;
 	
 }
 
-#posts div.shallow-post span.perma a:hover	{
+#posts .shallow-post span.perma a:hover	{
 	background:#8FBE00 url('images/green-fold.png') no-repeat bottom right;
 }
 
-#posts div.shallow-post span.comment	{
+#posts .shallow-post span.comment	{
 	margin-top:15px;
 	float:right;
 	padding:5px 0;
 	background:#ddd url('images/ddd-fold.png') no-repeat bottom right;
 }
 
-#posts div.shallow-post span.comment a	{
+#posts .shallow-post span.comment a	{
 	padding:0 25px 0 15px;
 	margin:0 0 0 15px;
 	color:#666;
 	background: url('images/comment.png') no-repeat left;
 }
 
-#posts div.shallow-post span.comment a:hover	{
+#posts .shallow-post span.comment a:hover	{
 	color:#8FBE00;
 	background: url('images/green-comment.png') no-repeat left;
 }

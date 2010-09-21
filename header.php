@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<head profile="http://gmpg.org/xfn/11">
-	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<html <?php language_attributes(); ?>>
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	
 	<title><?php bloginfo('name'); ?> <?php wp_title('&mdash;', true, 'left'); ?></title>
@@ -10,13 +11,13 @@
 	<![endif]-->
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<?php echo hipsterist_page_color($page); ?>
 	<?php echo hipsterist_tag_color(); ?>
 	<?php echo hipsterist_search_color(); ?>
 	<?php echo hipsterist_post_link_color(); ?>
 	<?php echo hipsterist_link_color(); ?>
 	<?php echo hipsterist_category_link_color(); ?>
-	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Article Feed" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	
 	<?php wp_head(); ?>

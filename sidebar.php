@@ -13,8 +13,10 @@
 				<div class="clearfix"></div>
 		</form>
 	</div>
+	<?php if ( is_active_sidebar('left-sidebar') ) : ?>
 	<div id="widgets">
 		<?php if ( !function_exists('dynamic_sidebar') OR !dynamic_sidebar() ) : ?>
 		<?php endif; ?>
 	</div>
+	<?php endif; ?>
 </div>

@@ -1,6 +1,7 @@
 <?php include_header('footer')?>
 
 <div class="wrapper">
+	
 	<?php include_sidebar('footer') ?>
 	
 	<div id="right-content">

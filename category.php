@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <div class="wrapper">
-	<?php $active = "topics"; include 'sidebar.php' ?>
+	<?php include_sidebar('topics'); ?>
 	
 	<div id="right-content">
 		<h2 class="title-header"><?php single_cat_title(); ?></h2>
@@ -11,12 +11,11 @@
 			<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
 			<div class="shallow-post<?php if ($x % 2) : ?> alt<?php endif; ?>">
-				<?php $data = get_post_meta($id, 'image'); ?>
-				<?php if ( ! empty($data[0])): ?>
+				<?php if (has_post_thumbnail()): ?>
 					<div class="shallow-image">
 						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-						<div class="shallow-overlay"></div>
-							<img src="<?php echo $data[0] ?>" width="290" height="120" alt="<?php the_title(); ?> Thumbnail" />
+						<span class="shallow-overlay"></span>
+							<?php the_post_thumbnail(); ?>
 						</a>
 					</div>
 				<?php endif ?>
@@ -33,7 +32,6 @@
 
 				<h2 class="center">Not Found</h2>
 				<p class="center">Sorry, but you are looking for something that isn't here.</p>
-				<?php include (TEMPLATEPATH . "/searchform.php"); ?>
 
 			<?php endif; ?>
 			<div class="clear"></div>
