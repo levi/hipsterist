@@ -5,6 +5,7 @@
 	</div>
 	
 	<?php hipsterist_navigation($active); ?>
+	
 	<div class="box" id="search">
 		<h4><span>SEARCH</span></h4>
 		<form method="get" id="searchform" action="<?php bloginfo('wpurl') ?>">
@@ -14,9 +15,8 @@
 		</form>
 	</div>
 	<?php if ( is_active_sidebar('left-sidebar') ) : ?>
-	<div id="widgets">
-		<?php if ( !function_exists('dynamic_sidebar') OR !dynamic_sidebar() ) : ?>
-		<?php endif; ?>
-	</div>
+  	<div id="widgets">
+  		<?php dynamic_sidebar('left-sidebar') ?>
+  	</div>
 	<?php endif; ?>
 </div>
