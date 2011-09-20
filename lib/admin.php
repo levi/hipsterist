@@ -3,10 +3,10 @@
 add_action('admin_menu', 'hipsterist_admin_menu');
 add_action('admin_post_hipsterist_save', 'hipsterist_save_settings');
 
-if ($_GET['activated']) {
+if (isset($_GET['activated'])) {
 	wp_redirect(admin_url('themes.php?page=hipsterist-settings&active=true'));
 }
-
+	
 function hipsterist_admin_menu() {
   add_theme_page(__('Hipsterist Settings', 'hipsterist'), __('Hipsterist Settings', 'hipsterist'), 'edit_themes', 'hipsterist-settings', 'hipsterist_settings');
 }
@@ -14,13 +14,13 @@ function hipsterist_admin_menu() {
 function hipsterist_settings() {
 ?>
 	<div class="wrap">
-		<?php if ($_GET['saved']): ?>
+		<?php if (isset($_GET['saved'])): ?>
 	    <div id="updated" class="updated fade">
 	        <p><?php echo __('Settings saved!', 'hipsterist').' <a href="'.get_bloginfo('url').'/">'.__('View your website &rarr;', 'hipsterist').'</a>'; ?></p>
 	    </div>
 	    <?php endif; ?>
 
-	    <?php if ($_GET['active']): ?>
+	    <?php if (isset($_GET['active'])): ?>
 	    <div id="updated" class="updated fade">
 	        <p><?php echo __('Awesome, the Hipsterist theme is now active! To get the full experience, go ahead and change some settings below.', 'hipsterist').' <a href="'.get_bloginfo('url').'/">'.__('View your website &rarr;', 'hipsterist').'</a>'; ?></p>
 	    </div>
